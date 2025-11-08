@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Device Registration</h2>
+
+    <form id="registrationForm" novalidate>
+        <div class="form-group">
+            <label for="deviceName">Device Name:</label>
+            <input type="text" id="deviceName" name="deviceName">
+            <span class="error-message" id="deviceNameError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="serialNumber">Serial Number:</label>
+            <input type="text" id="serialNumber" name="serialNumber" placeholder="XXXX-YYYY">
+            <span class="error-message" id="serialNumberError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmSerial">Confirm Serial Number:</label>
+            <input type="text" id="confirmSerial" name="confirmSerial" placeholder="XXXX-YYYY">
+            <span class="error-message" id="confirmSerialNumber"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="otherInfo">Other Information (Notes) :</label>
+            <textarea name="otherInfo" id="otherInfo" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Register Device</button>
+
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
